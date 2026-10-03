@@ -9,5 +9,16 @@
     "sha256": "71045fd4a2d2cb8e2981c466b386e84de41de3d0d14ac29f3b22ad42a303530d",
     "bytes": 818294,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "D03",
+    "name": "科目与客商对应关系",
+    "version": "0.2.0",
+    "detailRoute": "tool-D03",
+    "workspaceRoute": "work-D03",
+    "runtime": "app/static/tools/D03/0.2.0/runtime.json",
+    "sha256": "3940d77de8f9fb879683a578dcd1816df89b1a9bd561954fbacbe618dd9c353d",
+    "bytes": 814923,
+    "offlineSize": "0.5 MB"
   }
 ]
