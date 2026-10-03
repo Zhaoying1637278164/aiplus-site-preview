@@ -227,5 +227,17 @@
     "sha256": "a79dd7042f82853e218396495c8dd65624c0ecfc0648dd434a239e6b679b47a1",
     "bytes": 822142,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "K03",
+    "name": "存货库龄与周转",
+    "version": "0.1.0",
+    "detailRoute": "tool-cost-05",
+    "workspaceRoute": "work-K03",
+    "runtime": "app/static/tools/K03/0.1.0/runtime.json",
+    "sha256": "c7599de83a27d2920dcf94888db68068d338c6cf9713058d6f8af4875b227e1a",
+    "bytes": 803043,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]
