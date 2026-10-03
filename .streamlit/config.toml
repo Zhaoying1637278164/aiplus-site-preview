@@ -10,3 +10,6 @@ gatherUsageStats = false
 [client]
 toolbarMode = "minimal"
 showSidebarNavigation = false
+
+[server]
+enableStaticServing = true

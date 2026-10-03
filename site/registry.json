@@ -1,0 +1,13 @@
+[
+  {
+    "id": "D02",
+    "name": "账表对账",
+    "version": "0.2.0",
+    "detailRoute": "tool-D02",
+    "workspaceRoute": "work-D02",
+    "runtime": "app/static/tools/D02/0.2.0/runtime.json",
+    "sha256": "71045fd4a2d2cb8e2981c466b386e84de41de3d0d14ac29f3b22ad42a303530d",
+    "bytes": 818294,
+    "offlineSize": "0.5 MB"
+  }
+]

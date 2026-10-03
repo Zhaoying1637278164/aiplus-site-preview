@@ -35,25 +35,15 @@ st.html(
 )
 
 ROOT = Path(__file__).parent
-# Only exact registered IDs can select a program. Never form a path from user input.
-TOOLS = {'D02': ROOT / "site" / "tools" / 'D02' / '0.1.0', 'D03': ROOT / "site" / "tools" / 'D03' / '0.1.0', 'D06': ROOT / "site" / "tools" / 'D06' / '0.1.1'}
-VERSIONS = {'D02': '0.1.0', 'D03': '0.1.0', 'D06': '0.1.1'}
+import json
+REGISTRY = json.loads((ROOT / "site/registry.json").read_text(encoding="utf-8"))
+TOOLS = {r["id"]: r for r in REGISTRY}
 selected = st.query_params.get("tool", "")
-if selected in TOOLS:
-    folder = TOOLS[selected]
-    version = VERSIONS[selected]
-    html = (folder / "index.html").read_text(encoding="utf-8")
-    names = [f"{selected}-{version}-离线包.zip", f"{selected}-{version}-源码.zip", "虚构样例.xlsx", "空白模板.csv", "使用说明.md", "财务规则.md", "THIRD_PARTY_NOTICES.md"]
-    if selected == "D03":
-        names += ["字典模板.csv", "虚构映射版本.json"]
-    links = []
-    for name in names:
-        payload = base64.b64encode((folder / name).read_bytes()).decode("ascii")
-        links.append(f'<a download="{name}" href="data:application/octet-stream;base64,{payload}" style="margin:8px;display:inline-block">{name}</a>')
-    toolbar = '<nav style="padding:16px;background:white"><a href="?" target="_blank" rel="noopener">返回官网</a>' + f'<strong style="margin:12px">{selected} · {version} 下载</strong>' + "".join(links) + '</nav>'
-    html = html.replace('<div id="root">', toolbar + '<div id="root">', 1)
-    components.html(html, height=900, scrolling=True)
-else:
-    if selected:
-        st.warning("该工具尚未开放，返回官网查看交付状态。")
-    components.html((ROOT / "site" / "index.html").read_text(encoding="utf-8"), height=900, scrolling=True)
+entry = TOOLS.get(selected)
+document = (ROOT / "site/index.html").read_text(encoding="utf-8")
+if entry:
+    initial = json.dumps(entry["workspaceRoute"]).replace("<", "\\u003c")
+    document = document.replace("<script>window.__AIPlusRegistry", "<script>window.__AIPlusInitialRoute=" + initial + ";</script><script>window.__AIPlusRegistry", 1)
+elif selected:
+    st.info("该工具尚未开放，请从工具库选择已交付的工具。")
+components.html(document, height=900, scrolling=True)
