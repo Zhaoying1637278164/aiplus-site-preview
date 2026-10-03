@@ -20,5 +20,16 @@
     "sha256": "3940d77de8f9fb879683a578dcd1816df89b1a9bd561954fbacbe618dd9c353d",
     "bytes": 814923,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "D06",
+    "name": "财务明细核查",
+    "version": "0.2.0",
+    "detailRoute": "tool-D06",
+    "workspaceRoute": "work-D06",
+    "runtime": "app/static/tools/D06/0.2.0/runtime.json",
+    "sha256": "fdc7c59d8aee73c130e38538be04576b5a9a6a463b0ebc1766254b50aad9a950",
+    "bytes": 801888,
+    "offlineSize": "0.5 MB"
   }
 ]
