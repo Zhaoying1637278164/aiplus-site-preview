@@ -205,5 +205,16 @@
     "bytes": 789587,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "T04",
+    "name": "借款还本付息排程",
+    "version": "0.2.0",
+    "detailRoute": "tool-T04",
+    "workspaceRoute": "work-T04",
+    "runtime": "app/static/tools/T04/0.2.0/runtime.json",
+    "sha256": "765a960be1d01e0d681399725936c123810ea271e5713da485da66bca54ea673",
+    "bytes": 859279,
+    "offlineSize": "0.5 MB"
   }
 ]

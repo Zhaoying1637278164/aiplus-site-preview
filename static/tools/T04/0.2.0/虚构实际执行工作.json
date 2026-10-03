@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "tool_id": "T04",
+  "app_version": "0.2.0",
+  "rule_version": "T04-2026-10-04.2",
+  "contains_data": true,
+  "execution": {
+    "scopes": [
+      {
+        "loanId": "L1",
+        "entity": "虚构甲公司",
+        "contract": "虚构合同001",
+        "order": "当日起减少本金",
+        "reference": "虚构合同：当日还本，剩余本金按10%单利计息至原到期日"
+      }
+    ],
+    "allocations": [
+      {
+        "id": "X1",
+        "actualId": "A1",
+        "target": "plan:L1:2026-01-01:principal",
+        "component": "principal",
+        "amount": "400",
+        "reference": "虚构部分提前还本",
+        "status": "草稿"
+      },
+      {
+        "id": "X2",
+        "actualId": "A1",
+        "target": "fee:F1",
+        "component": "fee",
+        "amount": "10",
+        "reference": "虚构已付费用",
+        "status": "草稿"
+      }
+    ],
+    "audit": [],
+    "confirmedFingerprint": "",
+    "history": null
+  },
+  "actuals": [
+    {
+      "id": "A1",
+      "loanId": "L1",
+      "date": "2025-01-01",
+      "currency": "CNY",
+      "unit": "元",
+      "principal": "400",
+      "interest": "0",
+      "fee": "10",
+      "bankRef": "虚构流水001",
+      "reference": "虚构付款证明",
+      "origin": {
+        "file": "虚构实际还款.csv",
+        "sheet": "Sheet1",
+        "row": 2
+      }
+    }
+  ],
+  "fees": [
+    {
+      "id": "F1",
+      "loanId": "L1",
+      "date": "2025-01-01",
+      "currency": "CNY",
+      "unit": "元",
+      "fee": "30",
+      "reference": "虚构合同费用",
+      "origin": {
+        "file": "虚构费用.csv",
+        "sheet": "Sheet1",
+        "row": 2
+      }
+    }
+  ],
+  "loans": [
+    {
+      "id": "L1",
+      "name": "虚构远山设备借款",
+      "currency": "CNY",
+      "unit": "元",
+      "principal": "1000",
+      "start": "2025-01-01",
+      "end": "2026-01-01",
+      "rate": "10",
+      "basis": "ACT/365",
+      "method": "到期还本",
+      "frequency": "12",
+      "firstDue": "2026-01-01",
+      "grace": "0",
+      "precision": "2",
+      "reference": "完全虚构合同第3条：每月付息等额还本，年利率12%，月利率1%",
+      "origin": {
+        "file": "手工录入",
+        "sheet": "借款条款",
+        "row": 1
+      }
+    }
+  ],
+  "changes": [],
+  "repayments": [],
+  "sources": [],
+  "baseline": null,
+  "asOf": "2025-01-01",
+  "tolerance": "0.01"
+}
