@@ -184,6 +184,17 @@
     "offlineSize": "0.5 MB"
   },
   {
+    "id": "K02",
+    "name": "成本差异分析",
+    "version": "0.1.0",
+    "detailRoute": "tool-K02",
+    "workspaceRoute": "work-K02",
+    "runtime": "app/static/tools/K02/0.1.0/runtime.json",
+    "sha256": "c66c7e0b8c0dd87b9c69b98a0515440a74c42acc48e7bb4de315a218558d0c55",
+    "bytes": 791079,
+    "offlineSize": "0.5 MB"
+  },
+  {
     "id": "K01",
     "name": "成本分摊表",
     "version": "0.1.0",
