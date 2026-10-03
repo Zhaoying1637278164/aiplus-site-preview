@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "tool": "T06",
+  "app_version": "0.1.0",
+  "rule_version": "T06-CAS19-20261004.2",
+  "contains_data": true,
+  "work": {
+    "scope": {
+      "entity": "虚构星河公司",
+      "date": "2026-09-30",
+      "base": "CNY",
+      "precision": 2,
+      "tolerance": "0.01",
+      "policyApproved": true,
+      "policyBasis": "完全虚构：财务负责人批准执行企业会计准则，普通货币性期末余额",
+      "offsetApproved": true,
+      "offsetBasis": "完全虚构：同主体同日USD组合管理抵销；不代表法律净额结算"
+    },
+    "balances": [
+      {
+        "id": "USD-A01",
+        "entity": "虚构星河公司",
+        "date": "2026-09-30",
+        "currency": "USD",
+        "base": "CNY",
+        "unit": "元",
+        "side": "资产",
+        "quantity": "100",
+        "book": "700",
+        "classification": "货币性",
+        "policy": "普通货币性",
+        "basis": "虚构固定金额银行存款",
+        "approved": "是",
+        "offset": "USD组合",
+        "reversal": "",
+        "reason": "",
+        "history": "7",
+        "historyQuote": "本位币/外币",
+        "historyDate": "2026-08-31",
+        "historySource": "完全虚构历史账面参考",
+        "origin": {
+          "file": "虚构余额.csv",
+          "sheet": "外币余额",
+          "row": 2
+        }
+      },
+      {
+        "id": "USD-L01",
+        "entity": "虚构星河公司",
+        "date": "2026-09-30",
+        "currency": "USD",
+        "base": "CNY",
+        "unit": "元",
+        "side": "负债",
+        "quantity": "40",
+        "book": "280",
+        "classification": "货币性",
+        "policy": "普通货币性",
+        "basis": "虚构固定金额应付款",
+        "approved": "是",
+        "offset": "USD组合",
+        "reversal": "",
+        "reason": "",
+        "history": "7",
+        "historyQuote": "本位币/外币",
+        "historyDate": "2026-08-31",
+        "historySource": "完全虚构历史账面参考",
+        "origin": {
+          "file": "虚构余额.csv",
+          "sheet": "外币余额",
+          "row": 3
+        }
+      }
+    ],
+    "rates": [
+      {
+        "currency": "USD",
+        "base": "CNY",
+        "date": "2026-09-30",
+        "quote": "本位币/外币",
+        "value": "7.1",
+        "source": "完全虚构情景，不是市场汇率",
+        "confirmed": "是",
+        "convertible": "可兑换",
+        "origin": {
+          "file": "虚构汇率.csv",
+          "sheet": "期末汇率",
+          "row": 2
+        }
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "升值1%",
+        "currency": "USD",
+        "mode": "变动百分比",
+        "value": "1",
+        "basis": "完全虚构敏感性假设，按归一本位币/外币变动",
+        "origin": {
+          "file": "虚构情景.csv",
+          "sheet": "汇率情景",
+          "row": 2
+        }
+      },
+      {
+        "id": "贬值1%",
+        "currency": "USD",
+        "mode": "变动百分比",
+        "value": "-1",
+        "basis": "完全虚构敏感性假设",
+        "origin": {
+          "file": "虚构情景.csv",
+          "sheet": "汇率情景",
+          "row": 3
+        }
+      }
+    ],
+    "sources": [
+      {
+        "kind": "balances",
+        "file": "虚构余额.csv",
+        "sheet": "外币余额",
+        "headerRow": 1,
+        "headers": [
+          "余额ID",
+          "主体",
+          "余额日",
+          "外币",
+          "本位币",
+          "单位",
+          "方向",
+          "外币数量",
+          "账面本位币金额",
+          "货币性分类",
+          "政策类型",
+          "分类与政策依据",
+          "已批准",
+          "抵销组",
+          "冲回原ID",
+          "冲回说明",
+          "历史参考汇率",
+          "历史报价方向",
+          "历史汇率日",
+          "历史汇率来源"
+        ],
+        "mapping": {
+          "id": "余额ID",
+          "entity": "主体",
+          "date": "余额日",
+          "currency": "外币",
+          "base": "本位币",
+          "unit": "单位",
+          "side": "方向",
+          "quantity": "外币数量",
+          "book": "账面本位币金额",
+          "classification": "货币性分类",
+          "policy": "政策类型",
+          "basis": "分类与政策依据",
+          "approved": "已批准",
+          "offset": "抵销组",
+          "reversal": "冲回原ID",
+          "reason": "冲回说明",
+          "history": "历史参考汇率",
+          "historyQuote": "历史报价方向",
+          "historyDate": "历史汇率日",
+          "historySource": "历史汇率来源"
+        },
+        "matrix": [
+          [
+            "余额ID",
+            "主体",
+            "余额日",
+            "外币",
+            "本位币",
+            "单位",
+            "方向",
+            "外币数量",
+            "账面本位币金额",
+            "货币性分类",
+            "政策类型",
+            "分类与政策依据",
+            "已批准",
+            "抵销组",
+            "冲回原ID",
+            "冲回说明",
+            "历史参考汇率",
+            "历史报价方向",
+            "历史汇率日",
+            "历史汇率来源"
+          ],
+          [
+            "USD-A01",
+            "虚构星河公司",
+            "2026-09-30",
+            "USD",
+            "CNY",
+            "元",
+            "资产",
+            "100",
+            "700",
+            "货币性",
+            "普通货币性",
+            "虚构固定金额银行存款",
+            "是",
+            "USD组合",
+            "",
+            "",
+            "7",
+            "本位币/外币",
+            "2026-08-31",
+            "完全虚构历史账面参考"
+          ],
+          [
+            "USD-L01",
+            "虚构星河公司",
+            "2026-09-30",
+            "USD",
+            "CNY",
+            "元",
+            "负债",
+            "40",
+            "280",
+            "货币性",
+            "普通货币性",
+            "虚构固定金额应付款",
+            "是",
+            "USD组合",
+            "",
+            "",
+            "7",
+            "本位币/外币",
+            "2026-08-31",
+            "完全虚构历史账面参考"
+          ]
+        ]
+      },
+      {
+        "kind": "rates",
+        "file": "虚构汇率.csv",
+        "sheet": "期末汇率",
+        "headerRow": 1,
+        "headers": [
+          "外币",
+          "本位币",
+          "汇率日",
+          "报价方向",
+          "汇率值",
+          "汇率依据",
+          "方向已确认",
+          "可兑换性"
+        ],
+        "mapping": {
+          "currency": "外币",
+          "base": "本位币",
+          "date": "汇率日",
+          "quote": "报价方向",
+          "value": "汇率值",
+          "source": "汇率依据",
+          "confirmed": "方向已确认",
+          "convertible": "可兑换性"
+        },
+        "matrix": [
+          [
+            "外币",
+            "本位币",
+            "汇率日",
+            "报价方向",
+            "汇率值",
+            "汇率依据",
+            "方向已确认",
+            "可兑换性"
+          ],
+          [
+            "USD",
+            "CNY",
+            "2026-09-30",
+            "本位币/外币",
+            "7.1",
+            "完全虚构情景，不是市场汇率",
+            "是",
+            "可兑换"
+          ]
+        ]
+      },
+      {
+        "kind": "scenarios",
+        "file": "虚构情景.csv",
+        "sheet": "汇率情景",
+        "headerRow": 1,
+        "headers": [
+          "情景ID",
+          "外币",
+          "情景方式",
+          "情景值",
+          "情景依据"
+        ],
+        "mapping": {
+          "id": "情景ID",
+          "currency": "外币",
+          "mode": "情景方式",
+          "value": "情景值",
+          "basis": "情景依据"
+        },
+        "matrix": [
+          [
+            "情景ID",
+            "外币",
+            "情景方式",
+            "情景值",
+            "情景依据"
+          ],
+          [
+            "升值1%",
+            "USD",
+            "变动百分比",
+            "1",
+            "完全虚构敏感性假设，按归一本位币/外币变动"
+          ],
+          [
+            "贬值1%",
+            "USD",
+            "变动百分比",
+            "-1",
+            "完全虚构敏感性假设"
+          ]
+        ]
+      }
+    ],
+    "audit": [],
+    "reviews": []
+  }
+}

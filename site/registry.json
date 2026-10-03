@@ -216,5 +216,16 @@
     "sha256": "765a960be1d01e0d681399725936c123810ea271e5713da485da66bca54ea673",
     "bytes": 859279,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "T06",
+    "name": "外币敞口与汇兑测算",
+    "version": "0.1.0",
+    "detailRoute": "tool-T06",
+    "workspaceRoute": "work-T06",
+    "runtime": "app/static/tools/T06/0.1.0/runtime.json",
+    "sha256": "a79dd7042f82853e218396495c8dd65624c0ecfc0648dd434a239e6b679b47a1",
+    "bytes": 822142,
+    "offlineSize": "0.5 MB"
   }
 ]

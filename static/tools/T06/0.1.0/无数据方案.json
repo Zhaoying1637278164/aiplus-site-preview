@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "tool": "T06",
+  "app_version": "0.1.0",
+  "rule_version": "T06-CAS19-20261004.2",
+  "contains_data": false,
+  "work": {
+    "scope": {
+      "entity": "",
+      "date": "2026-09-30",
+      "base": "CNY",
+      "precision": 2,
+      "tolerance": "0.01",
+      "policyApproved": false,
+      "policyBasis": "完全虚构：财务负责人批准执行企业会计准则，普通货币性期末余额",
+      "offsetApproved": false,
+      "offsetBasis": "完全虚构：同主体同日USD组合管理抵销；不代表法律净额结算"
+    },
+    "balances": [],
+    "rates": [
+      {
+        "currency": "USD",
+        "base": "CNY",
+        "date": "2026-09-30",
+        "quote": "本位币/外币",
+        "value": "7.1",
+        "source": "完全虚构情景，不是市场汇率",
+        "confirmed": "否",
+        "convertible": "可兑换",
+        "origin": {
+          "file": "虚构汇率.csv",
+          "sheet": "期末汇率",
+          "row": 2
+        }
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "升值1%",
+        "currency": "USD",
+        "mode": "变动百分比",
+        "value": "1",
+        "basis": "完全虚构敏感性假设，按归一本位币/外币变动",
+        "origin": {
+          "file": "虚构情景.csv",
+          "sheet": "汇率情景",
+          "row": 2
+        }
+      },
+      {
+        "id": "贬值1%",
+        "currency": "USD",
+        "mode": "变动百分比",
+        "value": "-1",
+        "basis": "完全虚构敏感性假设",
+        "origin": {
+          "file": "虚构情景.csv",
+          "sheet": "汇率情景",
+          "row": 3
+        }
+      }
+    ],
+    "sources": [],
+    "audit": [],
+    "reviews": []
+  }
+}
