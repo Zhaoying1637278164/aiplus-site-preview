@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "tool": "T01",
+  "app_version": "0.1.0",
+  "rule_version": "T01-2026-10-04.1",
+  "contains_data": false,
+  "config": {
+    "scope": {
+      "entity": "虚构甲公司",
+      "account": "DEMO-001",
+      "currency": "CNY",
+      "unit": "元",
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "asof": "2026-01-31",
+      "precision": 2,
+      "tolerance": "0.00"
+    },
+    "balances": {
+      "bank": {
+        "mode": "flow",
+        "opening": "",
+        "closing": "",
+        "date": "2026-01-31",
+        "basis": "",
+        "scope_key": ""
+      },
+      "book": {
+        "mode": "flow",
+        "opening": "",
+        "closing": "",
+        "date": "2026-01-31",
+        "basis": "",
+        "scope_key": ""
+      }
+    },
+    "approvals": {
+      "bank": {
+        "map": {
+          "收": "收入",
+          "付": "支出"
+        },
+        "basis": "",
+        "date": "",
+        "keyApproved": false,
+        "keyBasis": ""
+      },
+      "book": {
+        "map": {
+          "收": "收入",
+          "付": "支出"
+        },
+        "basis": "",
+        "date": "",
+        "keyApproved": false,
+        "keyBasis": ""
+      }
+    }
+  }
+}

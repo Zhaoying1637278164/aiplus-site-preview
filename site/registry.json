@@ -124,5 +124,40 @@
     "sha256": "74019a09789553ba526323245b6b2676e270caec939b3097865348baf5a0dc17",
     "bytes": 795852,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "P04",
+    "name": "供应商对账",
+    "version": "0.1.0",
+    "detailRoute": "tool-ap-06",
+    "workspaceRoute": "work-P04",
+    "runtime": "app/static/tools/P04/0.1.0/runtime.json",
+    "sha256": "fdf5685fa7bbfb33dfa3331c361e8fe7135097b028e2f535f04fbf10defe8de1",
+    "bytes": 804791,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
+  },
+  {
+    "id": "T01",
+    "name": "银行对账台",
+    "version": "0.1.0",
+    "detailRoute": "tool-fund-04",
+    "workspaceRoute": "work-T01",
+    "runtime": "app/static/tools/T01/0.1.0/runtime.json",
+    "sha256": "9393e83dc3e15a7faf939f66341d72d8a749d028433f1870ed35d97915e16688",
+    "bytes": 817191,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
+  },
+  {
+    "id": "T02",
+    "name": "资金日报",
+    "version": "0.1.0",
+    "detailRoute": "tool-T02",
+    "workspaceRoute": "work-T02",
+    "runtime": "app/static/tools/T02/0.1.0/runtime.json",
+    "sha256": "0cb06eb926dd5918fe49be09716a692e43e89ac7f0608a6c10e7bd24c41bfc12",
+    "bytes": 794096,
+    "offlineSize": "0.5 MB"
   }
 ]
