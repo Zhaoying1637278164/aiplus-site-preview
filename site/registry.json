@@ -54,5 +54,17 @@
     "bytes": 796598,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "R03",
+    "name": "回款对账",
+    "version": "0.1.0",
+    "detailRoute": "tool-ar-05",
+    "workspaceRoute": "work-R03",
+    "runtime": "app/static/tools/R03/0.1.0/runtime.json",
+    "sha256": "04d55705cd715cf1bccba1cd1c11da9f729b6ba033c9d65b672ca731c15eb844",
+    "bytes": 803475,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]
