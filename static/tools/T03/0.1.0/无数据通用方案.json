@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "tool": "T03",
+  "app_version": "0.1.0",
+  "rule_version": "T03-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "schema_version": 1,
+    "revision": 1,
+    "settings": {
+      "start": "",
+      "weekday": "1",
+      "cutoff": "",
+      "entity": "",
+      "digits": 2,
+      "tolerance": "0"
+    },
+    "sources": [],
+    "events": [],
+    "measures": [],
+    "history": [],
+    "versions": []
+  }
+}

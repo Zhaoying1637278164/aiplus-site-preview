@@ -159,5 +159,17 @@
     "sha256": "0cb06eb926dd5918fe49be09716a692e43e89ac7f0608a6c10e7bd24c41bfc12",
     "bytes": 794096,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "T03",
+    "name": "13周资金预测",
+    "version": "0.1.0",
+    "detailRoute": "tool-fund-05",
+    "workspaceRoute": "work-T03",
+    "runtime": "app/static/tools/T03/0.1.0/runtime.json",
+    "sha256": "19e5fe418d00c601509c1b31294cef9692302fab03688442cfbcfc87f50e8ab6",
+    "bytes": 882135,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]
