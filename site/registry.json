@@ -90,5 +90,39 @@
     "bytes": 821368,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "P01",
+    "name": "采购三单核对",
+    "version": "0.1.0",
+    "detailRoute": "tool-P01",
+    "workspaceRoute": "work-P01",
+    "runtime": "app/static/tools/P01/0.1.0/runtime.json",
+    "sha256": "0199176ae8861fdec8e845b48e1409bb5d5357a0db7ee6ae614566781f7e00a1",
+    "bytes": 805006,
+    "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "P02",
+    "name": "付款计划表",
+    "version": "0.1.0",
+    "detailRoute": "tool-ap-05",
+    "workspaceRoute": "work-P02",
+    "runtime": "app/static/tools/P02/0.1.0/runtime.json",
+    "sha256": "e9d2b40ca09983510061f84088e683f900619cdbb2f216c5e4eb836cf15d17ed",
+    "bytes": 803154,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
+  },
+  {
+    "id": "P03",
+    "name": "预付款核销",
+    "version": "0.1.0",
+    "detailRoute": "tool-P03",
+    "workspaceRoute": "work-P03",
+    "runtime": "app/static/tools/P03/0.1.0/runtime.json",
+    "sha256": "74019a09789553ba526323245b6b2676e270caec939b3097865348baf5a0dc17",
+    "bytes": 795852,
+    "offlineSize": "0.5 MB"
   }
 ]
