@@ -250,5 +250,16 @@
     "sha256": "746adb109e13f4bf487e9f83b67c378a1f9e24090f969dd72ccd45cf98523582",
     "bytes": 801631,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "K05",
+    "name": "存货跌价测算",
+    "version": "0.1.0",
+    "detailRoute": "tool-K05",
+    "workspaceRoute": "work-K05",
+    "runtime": "app/static/tools/K05/0.1.0/runtime.json",
+    "sha256": "9db97187abff9dbf2eff3d467bba76a9971d5b65d7ba946cb7d3402f2e74a1e8",
+    "bytes": 806028,
+    "offlineSize": "0.5 MB"
   }
 ]
