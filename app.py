@@ -4,6 +4,8 @@
 让访客看到的就是官网本身。官网内容都在 site/index.html 里，本文件一般不需要改。
 """
 from pathlib import Path
+import base64
+import streamlit.components.v1 as components
 
 import streamlit as st
 
@@ -32,5 +34,22 @@ st.html(
 """
 )
 
-SITE = Path(__file__).parent / "site" / "index.html"
-st.iframe(SITE, height=900)
+ROOT = Path(__file__).parent
+# Only exact registered IDs can select a program. Never form a path from user input.
+TOOLS = {"D02": ROOT / "site" / "tools" / "D02" / "0.1.0"}
+selected = st.query_params.get("tool", "")
+if selected in TOOLS:
+    folder = TOOLS[selected]
+    html = (folder / "index.html").read_text(encoding="utf-8")
+    names = ["D02-0.1.0-离线包.zip", "D02-0.1.0-源码.zip", "虚构样例.xlsx", "空白模板.csv", "使用说明.md", "财务规则.md", "THIRD_PARTY_NOTICES.md"]
+    links = []
+    for name in names:
+        payload = base64.b64encode((folder / name).read_bytes()).decode("ascii")
+        links.append(f'<a download="{name}" href="data:application/octet-stream;base64,{payload}" style="margin:8px;display:inline-block">{name}</a>')
+    toolbar = '<nav style="padding:16px;background:white"><a href="?" target="_blank" rel="noopener">返回官网</a><strong style="margin:12px">D02 · 0.1.0 下载</strong>' + "".join(links) + '</nav>'
+    html = html.replace('<div id="root">', toolbar + '<div id="root">', 1)
+    components.html(html, height=900, scrolling=True)
+else:
+    if selected:
+        st.warning("该工具尚未开放，返回官网查看交付状态。")
+    components.html((ROOT / "site" / "index.html").read_text(encoding="utf-8"), height=900, scrolling=True)
