@@ -239,5 +239,16 @@
     "bytes": 803043,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "K04",
+    "name": "存货盘点差异",
+    "version": "0.1.0",
+    "detailRoute": "tool-K04",
+    "workspaceRoute": "work-K04",
+    "runtime": "app/static/tools/K04/0.1.0/runtime.json",
+    "sha256": "746adb109e13f4bf487e9f83b67c378a1f9e24090f969dd72ccd45cf98523582",
+    "bytes": 801631,
+    "offlineSize": "0.5 MB"
   }
 ]
