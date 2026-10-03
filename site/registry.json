@@ -66,5 +66,29 @@
     "bytes": 803475,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "R04",
+    "name": "应收账龄与逾期分析",
+    "version": "0.1.0",
+    "detailRoute": "tool-ar-06",
+    "workspaceRoute": "work-R04",
+    "runtime": "app/static/tools/R04/0.1.0/runtime.json",
+    "sha256": "ce2c90a41274ab9310462ac19be73296189feff3ef7ea923df22f8e3e8eaec65",
+    "bytes": 796986,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
+  },
+  {
+    "id": "R05",
+    "name": "坏账计提表",
+    "version": "0.1.0",
+    "detailRoute": "tool-ar-08",
+    "workspaceRoute": "work-R05",
+    "runtime": "app/static/tools/R05/0.1.0/runtime.json",
+    "sha256": "a9039c3adf875e0f0df6fca137d4c417cfd6e0fbf8873e8bf68590c3dc29ce10",
+    "bytes": 821368,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]

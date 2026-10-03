@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "tool": "R04",
+  "app_version": "0.1.0",
+  "rule_version": "R04-2026-10-03.1",
+  "contains_data": false,
+  "work": {
+    "rule": {
+      "mode": "snapshot",
+      "cutoff": "2026-09-30",
+      "snapshotDate": "2026-09-30",
+      "openingDate": "2026-08-31",
+      "confirmed": true,
+      "basis": "occurrence",
+      "bands": [
+        {
+          "label": "0–30天",
+          "min": 0,
+          "max": 30
+        },
+        {
+          "label": "31–60天",
+          "min": 31,
+          "max": 60
+        },
+        {
+          "label": "61–90天",
+          "min": 61,
+          "max": 90
+        },
+        {
+          "label": "91天以上",
+          "min": 91,
+          "max": null
+        }
+      ],
+      "precision": 2,
+      "tolerance": "0.00",
+      "scope": "完全虚构样例；用户确认截止日快照完整"
+    }
+  }
+}
