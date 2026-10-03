@@ -171,5 +171,16 @@
     "bytes": 882135,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "T05",
+    "name": "融资成本比较",
+    "version": "0.1.0",
+    "detailRoute": "tool-T05",
+    "workspaceRoute": "work-T05",
+    "runtime": "app/static/tools/T05/0.1.0/runtime.json",
+    "sha256": "ac335b0b9890cb05bcf24c9f33f89770ebf807b27bc64802f1ef0d1e698cf8fd",
+    "bytes": 789483,
+    "offlineSize": "0.5 MB"
   }
 ]
