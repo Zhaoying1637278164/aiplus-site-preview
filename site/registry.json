@@ -31,5 +31,16 @@
     "sha256": "fdc7c59d8aee73c130e38538be04576b5a9a6a463b0ebc1766254b50aad9a950",
     "bytes": 801888,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "R01",
+    "name": "合同开票回款台账",
+    "version": "0.1.0",
+    "detailRoute": "tool-R01",
+    "workspaceRoute": "work-R01",
+    "runtime": "app/static/tools/R01/0.1.0/runtime.json",
+    "sha256": "3c62aacde76fe3f2f3f1c5aca2d132b812d979271a5ed535c1d472ff678d8251",
+    "bytes": 796024,
+    "offlineSize": "0.5 MB"
   }
 ]
