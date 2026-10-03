@@ -182,5 +182,17 @@
     "sha256": "ac335b0b9890cb05bcf24c9f33f89770ebf807b27bc64802f1ef0d1e698cf8fd",
     "bytes": 789483,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "K01",
+    "name": "成本分摊表",
+    "version": "0.1.0",
+    "detailRoute": "tool-cost-03",
+    "workspaceRoute": "work-K01",
+    "runtime": "app/static/tools/K01/0.1.0/runtime.json",
+    "sha256": "b7e23591e2e244e59dde0929f874c70bda6cd21a75c140770d8f69b40cb9c945",
+    "bytes": 789587,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]
