@@ -36,14 +36,16 @@ st.html(
 
 ROOT = Path(__file__).parent
 # Only exact registered IDs can select a program. Never form a path from user input.
-TOOLS = {'D02': ROOT / "site" / "tools" / 'D02' / '0.1.0', 'D06': ROOT / "site" / "tools" / 'D06' / '0.1.0'}
-VERSIONS = {'D02': '0.1.0', 'D06': '0.1.0'}
+TOOLS = {'D02': ROOT / "site" / "tools" / 'D02' / '0.1.0', 'D03': ROOT / "site" / "tools" / 'D03' / '0.1.0', 'D06': ROOT / "site" / "tools" / 'D06' / '0.1.1'}
+VERSIONS = {'D02': '0.1.0', 'D03': '0.1.0', 'D06': '0.1.1'}
 selected = st.query_params.get("tool", "")
 if selected in TOOLS:
     folder = TOOLS[selected]
     version = VERSIONS[selected]
     html = (folder / "index.html").read_text(encoding="utf-8")
     names = [f"{selected}-{version}-离线包.zip", f"{selected}-{version}-源码.zip", "虚构样例.xlsx", "空白模板.csv", "使用说明.md", "财务规则.md", "THIRD_PARTY_NOTICES.md"]
+    if selected == "D03":
+        names += ["字典模板.csv", "虚构映射版本.json"]
     links = []
     for name in names:
         payload = base64.b64encode((folder / name).read_bytes()).decode("ascii")

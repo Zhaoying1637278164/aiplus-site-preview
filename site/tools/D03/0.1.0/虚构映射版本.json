@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "tool": "D03",
+  "app_version": "0.1.0",
+  "rule_version": "D03-2026-10-03.1",
+  "contains_data": true,
+  "mapping": {
+    "version": "虚构V1-2026-09",
+    "entries": [
+      {
+        "id": "M1",
+        "by": "code",
+        "value": "001",
+        "target": "C01",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [],
+        "priority": 0,
+        "confirmed": true
+      },
+      {
+        "id": "M2",
+        "by": "code",
+        "value": "002",
+        "target": "C02",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [],
+        "priority": 0,
+        "confirmed": false
+      },
+      {
+        "id": "M3",
+        "by": "code",
+        "value": "003",
+        "target": "C03",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [],
+        "priority": 0,
+        "confirmed": true
+      },
+      {
+        "id": "M4",
+        "by": "code",
+        "value": "003",
+        "target": "C04",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [],
+        "priority": 99,
+        "confirmed": true
+      },
+      {
+        "id": "M5",
+        "by": "name",
+        "value": "研发部",
+        "target": "D01",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [
+          "研發部"
+        ],
+        "priority": 0,
+        "confirmed": true
+      },
+      {
+        "id": "M6",
+        "by": "code",
+        "value": "004",
+        "target": "C03",
+        "scope": "公司A",
+        "from": "2026-08-01",
+        "to": "2026-08-31",
+        "aliases": [],
+        "priority": 0,
+        "confirmed": true
+      },
+      {
+        "id": "M7",
+        "by": "code",
+        "value": "006",
+        "target": "C05",
+        "scope": "公司A",
+        "from": "",
+        "to": "",
+        "aliases": [],
+        "priority": 0,
+        "confirmed": true
+      }
+    ]
+  }
+}
