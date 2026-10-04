@@ -252,6 +252,18 @@
     "offlineSize": "0.5 MB"
   },
   {
+    "id": "A01",
+    "name": "折旧摊销排程表",
+    "version": "0.1.1",
+    "detailRoute": "tool-asset-02",
+    "workspaceRoute": "work-A01",
+    "runtime": "app/static/tools/A01/0.1.1/runtime.json",
+    "sha256": "60d2cd7dbbf9e191743bd2525d3abfd77609fc37aea2f3f403487a571b32f00a",
+    "bytes": 802077,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
+  },
+  {
     "id": "K05",
     "name": "存货跌价测算",
     "version": "0.1.0",
