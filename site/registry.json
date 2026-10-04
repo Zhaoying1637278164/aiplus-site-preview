@@ -285,5 +285,16 @@
     "bytes": 810038,
     "offlineSize": "0.5 MB",
     "replacesOriginal": true
+  },
+  {
+    "id": "A03",
+    "name": "资产处置测算",
+    "version": "0.1.0",
+    "detailRoute": "tool-A03",
+    "workspaceRoute": "work-A03",
+    "runtime": "app/static/tools/A03/0.1.0/runtime.json",
+    "sha256": "6d349422650a35bad2e6b1889b46fc13da929fa526b5e9f21472c452881ccf08",
+    "bytes": 801546,
+    "offlineSize": "0.5 MB"
   }
 ]
