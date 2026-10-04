@@ -273,5 +273,17 @@
     "sha256": "9db97187abff9dbf2eff3d467bba76a9971d5b65d7ba946cb7d3402f2e74a1e8",
     "bytes": 806028,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "A02",
+    "name": "资产台账与盘点",
+    "version": "0.1.0",
+    "detailRoute": "tool-asset-03",
+    "workspaceRoute": "work-A02",
+    "runtime": "app/static/tools/A02/0.1.0/runtime.json",
+    "sha256": "e7a206ed8b149aa424ff259cc817fcdc49d9dbed2d2dc82421c3d2802becfc95",
+    "bytes": 810038,
+    "offlineSize": "0.5 MB",
+    "replacesOriginal": true
   }
 ]
