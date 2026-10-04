@@ -296,5 +296,16 @@
     "sha256": "6d349422650a35bad2e6b1889b46fc13da929fa526b5e9f21472c452881ccf08",
     "bytes": 801546,
     "offlineSize": "0.5 MB"
+  },
+  {
+    "id": "A04",
+    "name": "租赁测算底稿",
+    "version": "0.1.1",
+    "detailRoute": "tool-A04",
+    "workspaceRoute": "work-A04",
+    "runtime": "app/static/tools/A04/0.1.1/runtime.json",
+    "sha256": "51f398610322678bd8e405bd50a3c1f4321286907704382bd37462861f41080a",
+    "bytes": 807029,
+    "offlineSize": "0.5 MB"
   }
 ]
