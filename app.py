@@ -35,12 +35,15 @@ st.html(
 )
 
 ROOT = Path(__file__).parent
+ASSET_COMPONENT = components.declare_component("aiplus_tool_assets", path=ROOT / "static")
 import json
 REGISTRY = json.loads((ROOT / "site/registry.json").read_text(encoding="utf-8"))
 TOOLS = {r["id"]: r for r in REGISTRY}
 selected = st.query_params.get("tool", "")
 entry = TOOLS.get(selected)
 document = (ROOT / "site/index.html").read_text(encoding="utf-8")
+asset_prefix = json.dumps("component/" + ASSET_COMPONENT.name + "/tools/").replace("<", "\\u003c")
+document = document.replace("<script>window.__AIPlusRegistry", "<script>window.__AIPlusAssetPrefix=" + asset_prefix + ";</script><script>window.__AIPlusRegistry", 1)
 if entry:
     initial = json.dumps(entry["workspaceRoute"]).replace("<", "\\u003c")
     document = document.replace("<script>window.__AIPlusRegistry", "<script>window.__AIPlusInitialRoute=" + initial + ";</script><script>window.__AIPlusRegistry", 1)

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "tool": "C04",
+  "app_version": "0.1.0",
+  "rule_version": "C04-2026-10-04.1",
+  "includes_data": false,
+  "config": {
+    "precision": 2,
+    "tolerance": "0.01",
+    "materiality": "0",
+    "continuity": true,
+    "complete": false,
+    "directions": {}
+  },
+  "mapping": {
+    "主体": "主体",
+    "期间": "期间",
+    "币种": "币种",
+    "单位": "单位",
+    "科目编码": "科目编码",
+    "科目名称": "科目名称",
+    "期初借方": "期初借方",
+    "期初贷方": "期初贷方",
+    "发生借方": "发生借方",
+    "发生贷方": "发生贷方",
+    "期末借方": "期末借方",
+    "期末贷方": "期末贷方",
+    "正常方向": "正常方向"
+  },
+  "table": null
+}

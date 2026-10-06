@@ -1,0 +1,37 @@
+{
+  "tool": "F05",
+  "version": "0.1.0",
+  "files": {
+    "THIRD_PARTY_NOTICES.md": "979bc8d6baff04fe0f44f1c3174519d93e92ff91a3e4b29fca02da5b3fcf4911",
+    "index.html": "a00588547ec1424cf18d6f8b574f02078b96c0437f38eae246fd057ed1d58a61",
+    "runtime.json": "91cd7163310c5f936e6131865407ae076734d1f479d42182e20ed3130eb462b4",
+    "使用说明.md": "73eb0726fffd595915e535c2f60bb766e87db63897d2c5e149b9e78cbde1e21f",
+    "参考来源.md": "8f91d4995f90b02459cb4765dce4680539502dc9ae676e616e28559d073bb40a",
+    "空白模板.csv": "b5ab2b835a5619dd269a98b79b7fd3424878d865fae780a70b5b4ebee35640c3",
+    "虚构样例.csv": "9f90902ab38f71259669c8b2065c1eabae7fae2116878a7d930866595338ba70",
+    "虚构样例.xlsx": "bc5ddd057e082f41c4d8e23dd3ca8a30d7f8540c563a25f7b6d09fc14bc26e44",
+    "财务规则.md": "afe44acf8801b3fe8e4c96db421c56029f08f8edcc7599891426570c45fabc8c"
+  },
+  "runtime_packages": [
+    "node_modules/base64-js",
+    "node_modules/buffer",
+    "node_modules/decimal.js",
+    "node_modules/events",
+    "node_modules/exceljs",
+    "node_modules/ieee754",
+    "node_modules/inherits",
+    "node_modules/jszip",
+    "node_modules/pako",
+    "node_modules/papaparse",
+    "node_modules/react",
+    "node_modules/react-dom",
+    "node_modules/readable-stream",
+    "node_modules/safe-buffer",
+    "node_modules/saxes",
+    "node_modules/scheduler",
+    "node_modules/string_decoder",
+    "node_modules/util-deprecate",
+    "node_modules/uuid",
+    "node_modules/xmlchars"
+  ]
+}

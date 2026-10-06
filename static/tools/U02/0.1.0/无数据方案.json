@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "tool": "U02",
+  "app_version": "0.1.0",
+  "rule_version": "U02-2026-10-04.1",
+  "algorithm": "fnv1a-xorshift32-fisher-yates-rejection-v1",
+  "contains_data": false,
+  "settings": {
+    "population": "POP-2026",
+    "currency": "CNY",
+    "unit": "元",
+    "period": "2026-09",
+    "purpose": "",
+    "basis": "",
+    "method": "random",
+    "seed": "20261004",
+    "count": 3,
+    "strata": {},
+    "specified": [],
+    "specifiedReason": "",
+    "expectedCount": "",
+    "expectedAmount": "",
+    "tolerance": "0.00",
+    "exclusions": {}
+  },
+  "table": null
+}

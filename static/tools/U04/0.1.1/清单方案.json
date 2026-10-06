@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "tool": "U04",
+  "app_version": "0.1.1",
+  "rule_version": "U04-local-1",
+  "includes_data": false,
+  "includes_evidence": false,
+  "work": {
+    "scope": {
+      "entity": "虚构星桥公司",
+      "period": "2026年9月",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "purpose": "虚构采购付款及月结复核；抽取三项个人检查记录",
+      "preparer": "虚构检查员甲",
+      "policy": "用户自定检查清单（演示，不是法规）",
+      "policyDate": "2026-09-01",
+      "conditions": "仅用于虚构演示，实际使用须确认本单位依据与适用范围"
+    },
+    "items": [
+      {
+        "id": "IC-01",
+        "title": "付款审批",
+        "process": "采购付款",
+        "risk": "未授权付款",
+        "procedure": "检查选定记录并记录观察事实",
+        "requirement": "有日期和责任人的审批或复核记录",
+        "owner": "虚构负责人1",
+        "period": "2026年9月",
+        "source": {
+          "file": "清单方案",
+          "sheet": "清单模板",
+          "row": 1,
+          "cells": {}
+        },
+        "fact": "",
+        "factDate": "",
+        "tester": "",
+        "assessment": "未评价",
+        "basis": "",
+        "reviewer": "",
+        "reviewDate": "",
+        "evidenceIds": []
+      },
+      {
+        "id": "IC-02",
+        "title": "供应商变更复核",
+        "process": "采购付款",
+        "risk": "复核遗漏",
+        "procedure": "检查选定记录并记录观察事实",
+        "requirement": "有日期和责任人的审批或复核记录",
+        "owner": "虚构负责人2",
+        "period": "2026年9月",
+        "source": {
+          "file": "清单方案",
+          "sheet": "清单模板",
+          "row": 1,
+          "cells": {}
+        },
+        "fact": "",
+        "factDate": "",
+        "tester": "",
+        "assessment": "未评价",
+        "basis": "",
+        "reviewer": "",
+        "reviewDate": "",
+        "evidenceIds": []
+      },
+      {
+        "id": "IC-03",
+        "title": "月结对账",
+        "process": "财务报告",
+        "risk": "复核遗漏",
+        "procedure": "检查选定记录并记录观察事实",
+        "requirement": "有日期和责任人的审批或复核记录",
+        "owner": "虚构负责人3",
+        "period": "2026年9月",
+        "source": {
+          "file": "清单方案",
+          "sheet": "清单模板",
+          "row": 1,
+          "cells": {}
+        },
+        "fact": "",
+        "factDate": "",
+        "tester": "",
+        "assessment": "未评价",
+        "basis": "",
+        "reviewer": "",
+        "reviewDate": "",
+        "evidenceIds": []
+      }
+    ],
+    "evidence": [],
+    "issues": []
+  }
+}

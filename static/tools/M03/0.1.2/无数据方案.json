@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "tool": "M03",
+  "app_version": "0.1.2",
+  "rule_version": "M03-2026-10-04.2",
+  "contains_data": false,
+  "work": {
+    "table": null,
+    "overrides": {},
+    "settings": {
+      "display": 2,
+      "tolerance": "0.000001",
+      "priceAxis": "-10,-5,0,5,10",
+      "quantityAxis": "-20,-10,0,10,20"
+    },
+    "scenarios": [
+      {
+        "name": "折扣促销假设",
+        "discount": "10",
+        "volumeChange": "20",
+        "variableChange": "0",
+        "fixedChange": "0",
+        "basis": "用户自定销量增加20%，不代表市场弹性"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "tool": "C03",
+  "app_version": "0.1.0",
+  "rule_version": "C03-2026-10-04.1",
+  "contains_data": false,
+  "state": {
+    "actualUpdates": [],
+    "items": [],
+    "rule": {
+      "method": "month",
+      "first": true,
+      "last": true,
+      "tail": "last",
+      "precision": 2,
+      "tolerance": "0.01"
+    },
+    "changes": [],
+    "confirmed": []
+  }
+}

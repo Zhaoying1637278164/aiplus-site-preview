@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "tool": "M04",
+  "app_version": "0.1.1",
+  "rule_version": "M04-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "config": {
+      "mode": "period",
+      "frequency": "year",
+      "timing": "end",
+      "baseDate": "2026-01-01",
+      "dayBasis": "365",
+      "rate": "10",
+      "hurdle": "12",
+      "basis": "虚构示例：折现率10%，要求回报12%；使用前确认企业口径",
+      "currency": "CNY",
+      "unit": "元",
+      "horizon": "3",
+      "decimals": 2,
+      "tolerance": "0.000001",
+      "payback": "discrete",
+      "irrMin": "-99.9",
+      "irrMax": "1000",
+      "scenarios": [
+        {
+          "name": "下行",
+          "rate": "12",
+          "inflow": "0.8",
+          "outflow": "1.1",
+          "initial": "1",
+          "terminal": "0.8"
+        },
+        {
+          "name": "上行",
+          "rate": "8",
+          "inflow": "1.2",
+          "outflow": "1",
+          "initial": "1",
+          "terminal": "1.2"
+        }
+      ],
+      "rates": [
+        "0",
+        "10",
+        "12",
+        "20"
+      ],
+      "factors": [
+        "0.8",
+        "1",
+        "1.2"
+      ],
+      "mapping": {
+        "项目": "项目",
+        "现金流ID": "现金流ID",
+        "类别": "类别",
+        "金额": "金额",
+        "币种": "币种",
+        "单位": "单位",
+        "期次": "期次",
+        "日期": "日期",
+        "说明": "说明"
+      }
+    },
+    "table": null,
+    "original": null
+  }
+}
