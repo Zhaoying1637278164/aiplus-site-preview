@@ -62,3 +62,21 @@ python3 scripts/test_catalog.py
 ```
 
 构建脚本把登记数据与展示代码内嵌到官网，离线展示不依赖外部请求。规划编号采用模块前缀加 `-P` 与顺序号，不代表已交付工具编号。
+
+## 场景路径与快速指引
+
+首页和工具库提供月结、经营分析、资金预测三条操作路径。每个步骤写明准备资料、关键口径、复核重点、导出成果和下一步衔接；全部已上线工具的详情页提供快速使用指引。工具名称与链接始终来自 `site/catalog.json`，不增加产品登记或改变分类计数。
+
+`site/workflows.json` 仅包含无业务数据的操作说明，`site/workflows-ui.js` 生成页面模板并通过既有路由打开工具。场景指引可主动下载为 Markdown；跨工具资料按下一款模板人工整理。没有跨工具自动传数、AI解释或企业系统连接。
+
+修改指引后执行：
+
+```sh
+python3 scripts/build_catalog.py
+python3 scripts/build_workflows.py
+python3 scripts/check_catalog.py
+python3 scripts/test_catalog.py
+AIPLUS_PLAYWRIGHT_MODULE=/path/to/playwright node scripts/browser/check_workflows.cjs
+```
+
+浏览器验收支持 `AIPLUS_WORKFLOW_URL` 指定 Streamlit 官网，以及 `AIPLUS_WORKFLOW_EVIDENCE` 指定证据输出目录；未指定网址时验证本地 `file://` 页面。
