@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "tool": "P04",
+  "app_version": "0.1.1",
+  "rule_version": "P04-2026-10-03.1",
+  "contains_data": false,
+  "work": {
+    "schema_version": 1,
+    "sources": [],
+    "rules": {
+      "scope": {
+        "entity": "虚构甲公司",
+        "period": "2026-09",
+        "currency": "CNY",
+        "unit": "元",
+        "tax": "含税"
+      },
+      "mode": "period",
+      "precision": 2,
+      "tolerance": "0",
+      "signs": {
+        "left": {
+          "期初": 1,
+          "增加": 1,
+          "付款": 1,
+          "期末": 1
+        },
+        "right": {
+          "期初": 1,
+          "增加": 1,
+          "付款": 1,
+          "期末": 1
+        }
+      },
+      "approval": {
+        "left": {
+          "reason": "虚构示例批准：余额与增加正数，付款为减少额",
+          "date": "2026-09-30"
+        },
+        "right": {
+          "reason": "虚构示例批准：余额与增加正数，付款为减少额",
+          "date": "2026-09-30"
+        }
+      }
+    },
+    "maps": [],
+    "events": [],
+    "reviews": [],
+    "baseline": null,
+    "rejected": []
+  }
+}

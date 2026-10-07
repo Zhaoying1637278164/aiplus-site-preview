@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "tool": "E05",
+  "app_version": "0.2.2",
+  "rule_version": "E05-2026-10-04.2",
+  "contains_data": false,
+  "config": {
+    "fields": {
+      "id": "记录ID",
+      "period": "期间",
+      "entity": "主体",
+      "department": "部门",
+      "account": "科目",
+      "currency": "币种",
+      "unit": "单位",
+      "amount": "金额",
+      "basis": "金额口径",
+      "gross": "含税金额",
+      "net": "不含税金额",
+      "supplier": "供应商",
+      "project": "项目",
+      "classification": "固定变动"
+    },
+    "basis": "账面费用",
+    "measure": "amount",
+    "confirmed": true,
+    "from": "2026-01",
+    "to": "2026-03",
+    "current": "2026-02",
+    "previous": "2026-01",
+    "currency": "CNY",
+    "unit": "元",
+    "displayUnit": "元",
+    "precision": 2,
+    "threshold": "10000",
+    "growthThreshold": "30",
+    "filters": {
+      "department": "",
+      "account": "",
+      "classification": "",
+      "supplier": "",
+      "project": "",
+      "entity": ""
+    },
+    "structure": "department"
+  }
+}

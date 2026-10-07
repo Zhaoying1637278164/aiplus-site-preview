@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "tool": "B05",
+  "app_version": "0.1.1",
+  "rule_version": "B05-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "config": {
+      "dimensions": [
+        {
+          "left": "项目",
+          "right": "项目"
+        },
+        {
+          "left": "部门",
+          "right": "部门"
+        }
+      ],
+      "amount": {
+        "left": "金额",
+        "right": "金额"
+      },
+      "period": {
+        "left": "期间",
+        "right": "期间"
+      },
+      "currency": {
+        "left": "币种",
+        "right": "币种"
+      },
+      "unit": {
+        "left": "单位",
+        "right": "单位"
+      },
+      "basis": {
+        "left": "口径版本",
+        "right": "口径版本"
+      },
+      "assumptions": [
+        {
+          "left": "销量",
+          "right": "销量"
+        },
+        {
+          "left": "单价",
+          "right": "单价"
+        }
+      ],
+      "trim": false,
+      "duplicates": "block",
+      "tolerance": "0",
+      "materiality": "100",
+      "oldName": "原预算",
+      "newName": "新预算",
+      "note": ""
+    },
+    "left": null,
+    "right": null
+  }
+}

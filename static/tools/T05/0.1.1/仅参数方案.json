@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "tool": "T05",
+  "app_version": "0.1.1",
+  "rule_version": "T05-2026-10-04.1",
+  "contains_data": false,
+  "settings": {
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "currency": "CNY",
+    "unit": "元",
+    "discount": "10",
+    "basis": 365,
+    "min": "-90",
+    "max": "500",
+    "tolerance": "0.01",
+    "algorithm": "bisection"
+  },
+  "offers": []
+}

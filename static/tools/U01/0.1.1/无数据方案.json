@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "tool": "U01",
+  "app_version": "0.1.1",
+  "rule_version": "U01-2026-10-04.1",
+  "contains_data": false,
+  "config": {
+    "mapping": {
+      "主体": "主体",
+      "期间": "期间",
+      "凭证ID": "凭证ID",
+      "行ID": "行ID",
+      "日期": "日期",
+      "科目": "科目",
+      "借方": "借方",
+      "贷方": "贷方",
+      "币种": "币种",
+      "单位": "单位",
+      "摘要": "摘要",
+      "制单人": "制单人",
+      "审核人": "审核人"
+    },
+    "scope": {
+      "entity": "虚构甲公司",
+      "from": "2026-09",
+      "to": "2026-09",
+      "currency": "CNY",
+      "unit": "元"
+    },
+    "enabled": {
+      "balance": true,
+      "large": true,
+      "round": true,
+      "special": true,
+      "keyword": true,
+      "sameUser": true,
+      "pair": true,
+      "duplicate": true
+    },
+    "threshold": "10000",
+    "tolerance": "0.01",
+    "multiple": "1000",
+    "weekend": true,
+    "dates": "2026-09-30",
+    "keywords": "调整,冲回",
+    "accountA": "1001",
+    "accountB": "6001",
+    "basis": "用户内部凭证复核要求（演示，需确认）",
+    "effectiveFrom": "2026-01",
+    "effectiveTo": "2026-12"
+  },
+  "table": null,
+  "reviews": {}
+}

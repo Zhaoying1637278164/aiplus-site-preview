@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "tool": "E02",
+  "app_version": "0.2.1",
+  "rule_version": "E02-2026-10-04.2",
+  "contains_data": false,
+  "settings": {
+    "previous": "2026-08",
+    "current": "2026-09",
+    "currency": "CNY",
+    "unit": "元",
+    "threshold": "500",
+    "tolerance": "0.01",
+    "policySource": "企业工资核对口径（请替换为已批准依据）",
+    "effective": "2026-01",
+    "policyVersion": "企业核对-v1",
+    "projects": {}
+  },
+  "maps": [
+    {
+      "员工稳定ID": "员工稳定ID",
+      "姓名": "姓名",
+      "期间": "期间",
+      "工资项目": "工资项目",
+      "金额": "金额",
+      "部门": "部门",
+      "币种": "币种",
+      "单位": "单位"
+    },
+    {
+      "员工稳定ID": "员工稳定ID",
+      "姓名": "姓名",
+      "期间": "期间",
+      "工资项目": "工资项目",
+      "金额": "金额",
+      "部门": "部门",
+      "币种": "币种",
+      "单位": "单位"
+    }
+  ],
+  "tables": [
+    null,
+    null
+  ],
+  "reviews": {}
+}

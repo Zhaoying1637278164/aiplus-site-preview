@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "tool": "M05",
+  "app_version": "0.1.2",
+  "rule_version": "M05-2026-10-04.2",
+  "contains_data": false,
+  "work": {
+    "settings": {
+      "title": "经营月报",
+      "audience": "经营管理层",
+      "entity": "待设置主体",
+      "period": "2026-09",
+      "basis": "当期",
+      "currency": "CNY",
+      "unit": "元",
+      "precision": 2,
+      "tolerance": "0.01",
+      "threshold": "10",
+      "layout": "完整",
+      "narrative": "完整比较",
+      "confirmed": false
+    },
+    "metrics": [
+      {
+        "id": "revenue",
+        "name": "营业收入",
+        "kind": "sum",
+        "direction": "higher",
+        "inputUnit": "报告单位",
+        "inputCurrency": "报告币种",
+        "definition": "经过核对的营业收入明细，同维度汇总"
+      },
+      {
+        "id": "margin",
+        "name": "毛利率",
+        "kind": "ratio",
+        "direction": "higher",
+        "inputUnit": "报告单位",
+        "inputCurrency": "报告币种",
+        "definition": "毛利额合计 / 营业收入合计 × 100；分子分母均为同单位金额"
+      },
+      {
+        "id": "headcount",
+        "name": "期末人数",
+        "kind": "snapshot",
+        "direction": "neutral",
+        "inputUnit": "人",
+        "inputCurrency": "不适用",
+        "definition": "期间末同维度单笔快照；不得按明细求和"
+      }
+    ],
+    "table": null,
+    "notes": {},
+    "focus": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tool_id": "T04",
+  "app_version": "0.2.1",
+  "rule_version": "T04-2026-10-04.2",
+  "contains_data": false,
+  "execution": {
+    "scopes": [],
+    "allocations": [],
+    "audit": [],
+    "confirmedFingerprint": "",
+    "history": null
+  },
+  "actuals": [],
+  "fees": [],
+  "loans": [],
+  "changes": [],
+  "repayments": [],
+  "sources": [],
+  "baseline": null,
+  "asOf": "2026-02-01",
+  "tolerance": "0.01"
+}

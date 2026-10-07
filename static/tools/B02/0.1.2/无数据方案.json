@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "tool": "B02",
+  "app_version": "0.1.2",
+  "rule_version": "B02-2026-10-04.1",
+  "contains_data": false,
+  "config": {
+    "start": "2026-01",
+    "end": "2026-02",
+    "budgetVersion": "批准预算V1",
+    "actualVersion": "月结批次A",
+    "currency": "CNY",
+    "unit": "元",
+    "basis": "完全虚构主体；权责发生制；不含税；同一主体范围",
+    "confirmed": false,
+    "amountThreshold": "10",
+    "percentThreshold": "10",
+    "tolerance": "0.01",
+    "fields": {
+      "budget": {
+        "id": "记录ID",
+        "period": "期间",
+        "org": "组织",
+        "account": "科目",
+        "amount": "金额",
+        "version": "版本",
+        "currency": "币种",
+        "unit": "单位"
+      },
+      "actual": {
+        "id": "记录ID",
+        "period": "期间",
+        "org": "组织",
+        "account": "科目",
+        "amount": "金额",
+        "version": "批次",
+        "currency": "币种",
+        "unit": "单位"
+      }
+    },
+    "orgs": [
+      {
+        "side": "budget",
+        "from": "预算销售部",
+        "to": "销售责任部"
+      },
+      {
+        "side": "actual",
+        "from": "销售一部",
+        "to": "销售责任部"
+      }
+    ],
+    "accounts": [
+      {
+        "side": "budget",
+        "from": "收入",
+        "to": "营业收入",
+        "nature": "收入",
+        "direction": "增加有利"
+      },
+      {
+        "side": "actual",
+        "from": "主营收入",
+        "to": "营业收入",
+        "nature": "收入",
+        "direction": "增加有利"
+      },
+      {
+        "side": "budget",
+        "from": "差旅",
+        "to": "差旅费用",
+        "nature": "费用",
+        "direction": "减少有利"
+      },
+      {
+        "side": "actual",
+        "from": "差旅费",
+        "to": "差旅费用",
+        "nature": "费用",
+        "direction": "减少有利"
+      },
+      {
+        "side": "budget",
+        "from": "推广",
+        "to": "推广费用",
+        "nature": "费用",
+        "direction": "减少有利"
+      },
+      {
+        "side": "actual",
+        "from": "推广费",
+        "to": "推广费用",
+        "nature": "费用",
+        "direction": "减少有利"
+      }
+    ]
+  }
+}

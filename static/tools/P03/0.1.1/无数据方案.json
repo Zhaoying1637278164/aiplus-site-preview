@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "tool": "P03",
+  "app_version": "0.1.1",
+  "rule_version": "P03-2026-10-03.1",
+  "includes_data": false,
+  "config": {
+    "asof": "2026-09-30",
+    "mode": "history",
+    "snapshotDate": "2026-09-01",
+    "precision": 2,
+    "tolerance": "0.00"
+  }
+}

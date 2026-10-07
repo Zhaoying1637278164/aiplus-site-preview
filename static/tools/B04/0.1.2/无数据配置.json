@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "tool": "B04",
+  "app_version": "0.1.2",
+  "rule_version": "B04-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "scope": {
+      "start": "2027-01",
+      "end": "2027-03",
+      "currency": "CNY",
+      "unit": "元",
+      "method": "自然日折算",
+      "precision": 2,
+      "tolerance": "0",
+      "basis": "完全虚构示范：自然日折算，福利按薪资20%，非政策参数",
+      "confirmed": true
+    }
+  }
+}

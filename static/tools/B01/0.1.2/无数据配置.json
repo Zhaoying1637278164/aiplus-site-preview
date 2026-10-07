@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "tool": "B01",
+  "app_version": "0.1.2",
+  "rule_version": "B01-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "scope": {
+      "start": "2027-01",
+      "end": "2027-03",
+      "currency": "CNY",
+      "unit": "元",
+      "note": "完全虚构样例。折旧、附加率与付款比例仅为测算参数。"
+    },
+    "scenarios": [
+      {
+        "id": "base",
+        "name": "基准",
+        "a": "1",
+        "b": "1",
+        "c": "1",
+        "base": "1",
+        "rate": "0",
+        "reason": "虚构经营基线",
+        "overrides": []
+      },
+      {
+        "id": "up",
+        "name": "乐观",
+        "a": "1.1",
+        "b": "1.05",
+        "c": "1",
+        "base": "1",
+        "rate": "0",
+        "reason": "虚构数量增加10%，单位价格增加5%",
+        "overrides": []
+      },
+      {
+        "id": "down",
+        "name": "保守",
+        "a": "0.9",
+        "b": "0.95",
+        "c": "1",
+        "base": "1",
+        "rate": "0",
+        "reason": "虚构数量减少10%，单位价格减少5%",
+        "overrides": []
+      }
+    ]
+  }
+}

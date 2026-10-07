@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "tool": "M02",
+  "app_version": "0.1.3",
+  "rule_version": "M02-2026-10-05.3",
+  "contains_data": false,
+  "work": {
+    "config": {
+      "periods": {
+        "left": "2026-08",
+        "right": "2026-09"
+      },
+      "fields": {
+        "left": {
+          "product": "产品ID",
+          "category": "分类",
+          "period": "期间",
+          "currency": "币种",
+          "moneyUnit": "金额单位",
+          "quantityUnit": "数量单位",
+          "basis": "口径",
+          "quantity": "数量",
+          "price": "单价",
+          "unitCost": "单位成本",
+          "revenue": "",
+          "cost": ""
+        },
+        "right": {
+          "product": "产品ID",
+          "category": "分类",
+          "period": "期间",
+          "currency": "币种",
+          "moneyUnit": "金额单位",
+          "quantityUnit": "数量单位",
+          "basis": "口径",
+          "quantity": "数量",
+          "price": "单价",
+          "unitCost": "单位成本",
+          "revenue": "",
+          "cost": ""
+        }
+      },
+      "order": [
+        "总量",
+        "结构",
+        "价格",
+        "单位成本"
+      ],
+      "population": "all",
+      "precision": 6,
+      "tolerance": "0.000001",
+      "trim": false,
+      "confirmed": true,
+      "note": ""
+    },
+    "left": null,
+    "right": null
+  }
+}

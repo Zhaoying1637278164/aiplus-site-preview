@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "tool": "P03",
+  "app_version": "0.1.1",
+  "rule_version": "P03-2026-10-03.1",
+  "includes_data": true,
+  "config": {
+    "asof": "2026-09-30",
+    "mode": "history",
+    "snapshotDate": "2026-09-01",
+    "precision": 2,
+    "tolerance": "0.00"
+  },
+  "work": {
+    "config": {
+      "asof": "2026-09-30",
+      "mode": "history",
+      "snapshotDate": "2026-09-01",
+      "precision": 2,
+      "tolerance": "0.00"
+    },
+    "data": {
+      "prepayments": [
+        {
+          "file": "完全虚构样例.xlsx",
+          "sheet": "prepayments",
+          "row": 2,
+          "cells": {
+            "预付ID": "P001",
+            "主体ID": "001",
+            "供应商ID": "0001",
+            "合同ID": "001",
+            "币种": "CNY",
+            "金额单位": "元",
+            "含税口径": "含税",
+            "供应商名称": "虚构供应商甲",
+            "业务日": "2026-01-01",
+            "金额": "100",
+            "预计结算日": "2026-06-30",
+            "批准依据": "虚构批准单001"
+          }
+        }
+      ],
+      "settlements": [
+        {
+          "file": "完全虚构样例.xlsx",
+          "sheet": "settlements",
+          "row": 2,
+          "cells": {
+            "结算ID": "S001",
+            "主体ID": "001",
+            "供应商ID": "0001",
+            "合同ID": "001",
+            "币种": "CNY",
+            "金额单位": "元",
+            "含税口径": "含税",
+            "供应商名称": "虚构供应商甲",
+            "业务日": "2026-02-01",
+            "金额": "80",
+            "票面金额": "88",
+            "批准依据": "虚构批准单001"
+          }
+        }
+      ],
+      "allocations": [
+        {
+          "file": "完全虚构样例.xlsx",
+          "sheet": "allocations",
+          "row": 2,
+          "cells": {
+            "分配ID": "A001",
+            "预付ID": "P001",
+            "结算ID": "S001",
+            "金额": "60",
+            "业务日": "2026-03-01",
+            "状态": "已确认",
+            "批准依据": "虚构核销批准001",
+            "撤销日": null,
+            "撤销依据": null
+          }
+        }
+      ],
+      "refunds": []
+    },
+    "conflicts": [],
+    "events": [],
+    "reviews": {},
+    "version": 0,
+    "baseline": null
+  }
+}

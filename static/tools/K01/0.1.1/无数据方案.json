@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "tool": "K01",
+  "app_version": "0.1.1",
+  "rule_version": "K01-2026-10-04.1",
+  "contains_data": false,
+  "params": {
+    "entity": "虚构星禾制造",
+    "period": "2026-09",
+    "currency": "CNY",
+    "unit": "元",
+    "start": "2026-01",
+    "end": "2026-12",
+    "precision": 2,
+    "tolerance": "0",
+    "negative": "block",
+    "zero": "retain",
+    "tail": "last"
+  }
+}

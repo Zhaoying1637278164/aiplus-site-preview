@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tool": "T02",
+  "app_version": "0.1.1",
+  "rule_version": "T02-2026-10-04.1",
+  "contains_data": false,
+  "work": {
+    "schema_version": 1,
+    "revision": 1,
+    "from": "",
+    "to": "",
+    "entity": "",
+    "tolerance": "0",
+    "accounts": [],
+    "balances": [],
+    "restrictions": [],
+    "sources": [],
+    "rules": [],
+    "events": [],
+    "history": [],
+    "baseline": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tool": "U03",
+  "app_version": "0.1.1",
+  "rule_version": "U03-2026-10-04.1",
+  "contains_data": false,
+  "settings": {
+    "entity": "",
+    "reply": "",
+    "date": "2026-09-30",
+    "currency": "CNY",
+    "unit": "元",
+    "positive": "借方",
+    "template": "{{对象抬头}}：\n\n本单位{{发函单位}}正在核对截至{{截止日}}的往来余额，请核对以下资料。金额币种：{{币种}}；单位：{{单位}}。\n\n{{余额明细}}\n\n借方合计：{{借方合计}}；贷方合计：{{贷方合计}}。\n如有不符，请列明差异与依据。请将核对结果按项目要求回复至：{{回复地址}}。\n\n本函仅供往来资料核对，具体函证控制程序另行执行。\n编制资料来源：{{来源}}\n函件编号：{{函件编号}}",
+    "templateName": "一般往来资料核对",
+    "templateVersion": "1",
+    "prefix": "询证函",
+    "format": "html"
+  },
+  "balance": null,
+  "objects": null,
+  "reviewed": []
+}

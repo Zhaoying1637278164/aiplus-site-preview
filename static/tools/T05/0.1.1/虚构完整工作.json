@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "tool": "T05",
+  "app_version": "0.1.1",
+  "rule_version": "T05-2026-10-04.1",
+  "contains_data": true,
+  "settings": {
+    "start": "2026-01-01",
+    "end": "2027-01-01",
+    "currency": "CNY",
+    "unit": "元",
+    "discount": "10",
+    "basis": 365,
+    "min": "-90",
+    "max": "500",
+    "tolerance": "0.01",
+    "algorithm": "bisection"
+  },
+  "offers": [
+    {
+      "id": "A",
+      "name": "虚构方案A",
+      "currency": "CNY",
+      "unit": "元",
+      "principal": "1000",
+      "note": "纯虚构",
+      "flows": [
+        {
+          "id": "a1",
+          "date": "2026-01-01",
+          "kind": "放款",
+          "amount": "1000",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 2
+          }
+        },
+        {
+          "id": "a2",
+          "date": "2027-01-01",
+          "kind": "还本",
+          "amount": "1000",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 3
+          }
+        },
+        {
+          "id": "a3",
+          "date": "2027-01-01",
+          "kind": "利息",
+          "amount": "100",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "虚构方案B前扣费用",
+      "currency": "CNY",
+      "unit": "元",
+      "principal": "1000",
+      "note": "纯虚构",
+      "flows": [
+        {
+          "id": "b1",
+          "date": "2026-01-01",
+          "kind": "放款",
+          "amount": "1000",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 5
+          }
+        },
+        {
+          "id": "b2",
+          "date": "2026-01-01",
+          "kind": "前扣费",
+          "amount": "50",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 6
+          }
+        },
+        {
+          "id": "b3",
+          "date": "2027-01-01",
+          "kind": "还本",
+          "amount": "1000",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 7
+          }
+        },
+        {
+          "id": "b4",
+          "date": "2027-01-01",
+          "kind": "利息",
+          "amount": "100",
+          "note": "",
+          "source": {
+            "file": "虚构样例.csv",
+            "sheet": "CSV",
+            "row": 8
+          }
+        }
+      ]
+    }
+  ]
+}
