@@ -1,0 +1,1237 @@
+{
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "R",
+      "name": "应收"
+    },
+    {
+      "id": "P",
+      "name": "应付"
+    },
+    {
+      "id": "E",
+      "name": "费用薪酬"
+    },
+    {
+      "id": "T",
+      "name": "资金"
+    },
+    {
+      "id": "K",
+      "name": "成本存货"
+    },
+    {
+      "id": "A",
+      "name": "资产"
+    },
+    {
+      "id": "C",
+      "name": "结账"
+    },
+    {
+      "id": "F",
+      "name": "报表"
+    },
+    {
+      "id": "X",
+      "name": "税务"
+    },
+    {
+      "id": "B",
+      "name": "预算"
+    },
+    {
+      "id": "M",
+      "name": "经营分析"
+    },
+    {
+      "id": "D",
+      "name": "数据准备"
+    },
+    {
+      "id": "U",
+      "name": "审计内控"
+    }
+  ],
+  "kinds": [
+    {
+      "id": "P",
+      "name": "管理平台"
+    },
+    {
+      "id": "B",
+      "name": "分析看板"
+    },
+    {
+      "id": "T",
+      "name": "单点工具"
+    }
+  ],
+  "tools": [
+    {
+      "id": "R01",
+      "name": "合同开票回款台账",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "合同、开票与回款分别维护，明确部分分配，追查未关联记录与余额并导出底稿",
+      "detailRoute": "tool-R01",
+      "workspaceRoute": "work-R01"
+    },
+    {
+      "id": "R02",
+      "name": "收入确认排程表",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已批准的履约口径排程，核对独立账面收入，保留变更、未完成事项和完整底稿",
+      "detailRoute": "tool-ar-03",
+      "workspaceRoute": "work-R02"
+    },
+    {
+      "id": "R03",
+      "name": "回款对账",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对应收与银行回款，逐项确认部分分配、撤销与退款，追查未核销余额和完整底稿",
+      "detailRoute": "tool-ar-05",
+      "workspaceRoute": "work-R03"
+    },
+    {
+      "id": "R04",
+      "name": "应收账龄与逾期分析",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "分别分析应收账龄与逾期，核对截止余额、客户待办和原始来源，导出完整底稿",
+      "detailRoute": "tool-ar-06",
+      "workspaceRoute": "work-R04"
+    },
+    {
+      "id": "R05",
+      "name": "坏账计提表",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已批准的组合参数或个别评估测算坏账准备，核对账面变动与计提差异",
+      "detailRoute": "tool-ar-08",
+      "workspaceRoute": "work-R05"
+    },
+    {
+      "id": "P01",
+      "name": "采购三单核对",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对采购订单、收货退货与发票红字，追查数量金额差异、明确分配和来源底稿",
+      "detailRoute": "tool-P01",
+      "workspaceRoute": "work-P01"
+    },
+    {
+      "id": "P02",
+      "name": "付款计划表",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按未付余额安排部分付款，核对原到期日、13周排程、账户资金限额和来源底稿",
+      "detailRoute": "tool-ap-05",
+      "workspaceRoute": "work-P02"
+    },
+    {
+      "id": "P03",
+      "name": "预付款核销",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "明确预付与结算双端额度，确认部分核销与撤销，追查未核销余额、账龄和来源底稿",
+      "detailRoute": "tool-P03",
+      "workspaceRoute": "work-P03"
+    },
+    {
+      "id": "P04",
+      "name": "供应商对账",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对双方期初、增加、付款与期末，确认供应商对应和部分关联，追查差异与来源底稿",
+      "detailRoute": "tool-ap-06",
+      "workspaceRoute": "work-P04"
+    },
+    {
+      "id": "E01",
+      "name": "报销单校验",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "依据企业明确费用政策检查报销资料、超限及重复候选，人工复核异常并追查完整原始来源",
+      "detailRoute": "tool-exp-04",
+      "workspaceRoute": "work-E01"
+    },
+    {
+      "id": "E02",
+      "name": "工资变动核对",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对两期员工与薪项金额，分列人员出现变化、同人薪项差异和重要变动，追查来源与勾稽底稿",
+      "detailRoute": "tool-E02",
+      "workspaceRoute": "work-E02"
+    },
+    {
+      "id": "E03",
+      "name": "人工成本分摊",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认比例或工时分摊人工成本到部门项目，复核尾差、未分配成本与全部来源底稿",
+      "detailRoute": "tool-E03",
+      "workspaceRoute": "work-E03"
+    },
+    {
+      "id": "E04",
+      "name": "提成与奖金测算",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认业绩或回款与阶梯规则核算提成奖金，复核封顶、调整和冲回，逐人追查来源底稿",
+      "detailRoute": "tool-E04",
+      "workspaceRoute": "work-E04"
+    },
+    {
+      "id": "E05",
+      "name": "费用分析看板",
+      "module": "E",
+      "kind": "分析看板",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认费用口径核对期间、部门、科目、分类及供应商项目结构，追查异常和完整来源底稿",
+      "detailRoute": "tool-exp-02",
+      "workspaceRoute": "work-E05"
+    },
+    {
+      "id": "T01",
+      "name": "银行对账台",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对银行流水与企业日记账，批准部分关联和四类未达，分别编制两侧余额调节底稿",
+      "detailRoute": "tool-fund-04",
+      "workspaceRoute": "work-T01"
+    },
+    {
+      "id": "T02",
+      "name": "资金日报",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按账户和日期核对期初、收支、期末与可用资金，分别复核调拨和来源差异",
+      "detailRoute": "tool-T02",
+      "workspaceRoute": "work-T02"
+    },
+    {
+      "id": "T03",
+      "name": "13周资金预测",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按账户期初、实际收支和剩余计划编制13周资金排程，核对缺口、情景和滚动版本",
+      "detailRoute": "tool-fund-05",
+      "workspaceRoute": "work-T03"
+    },
+    {
+      "id": "T04",
+      "name": "借款还本付息排程",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按合同建立原还本付息计划，确认实际本金、利息和费用的逐笔分配，核对余额、后续计息及付款底稿",
+      "detailRoute": "tool-T04",
+      "workspaceRoute": "work-T04"
+    },
+    {
+      "id": "T05",
+      "name": "融资成本比较",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐笔核对借款到账、还本、利息与费用，比较净到账、融资现金成本和有效年化，保留求解残差与来源底稿",
+      "detailRoute": "tool-T05",
+      "workspaceRoute": "work-T05"
+    },
+    {
+      "id": "T06",
+      "name": "外币敞口与汇兑测算",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按主体与余额日核对外币资产负债，明确手工汇率、货币性和政策依据，复核敞口、汇兑变化与情景底稿",
+      "detailRoute": "tool-T06",
+      "workspaceRoute": "work-T06"
+    },
+    {
+      "id": "K01",
+      "name": "成本分摊表",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "归集来源成本，明确直接归属和分摊动因，复核对象成本、尾差、排除与未分配，追查完整底稿",
+      "detailRoute": "tool-cost-03",
+      "workspaceRoute": "work-K01"
+    },
+    {
+      "id": "K02",
+      "name": "成本差异分析",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按实际产出重建可比标准，分别复核用量、价格、交叉项和账面未解释差额，追查完整成本桥接底稿",
+      "detailRoute": "tool-K02",
+      "workspaceRoute": "work-K02"
+    },
+    {
+      "id": "K03",
+      "name": "存货库龄与周转",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对期初与完整收发台账，追查截止库存、来源库龄、平均库存和周转底稿",
+      "detailRoute": "tool-cost-05",
+      "workspaceRoute": "work-K03"
+    },
+    {
+      "id": "K04",
+      "name": "存货盘点差异",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按同一盘点截止日核对账面与实盘，明确物料单位、重盘与分区，复核盘盈盘亏和来源底稿",
+      "detailRoute": "tool-K04",
+      "workspaceRoute": "work-K04"
+    },
+    {
+      "id": "K05",
+      "name": "存货跌价测算",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对存货成本、准备变动和净值依据，按批准单项或组别测算跌价，复核计提、转回及来源底稿",
+      "detailRoute": "tool-K05",
+      "workspaceRoute": "work-K05"
+    },
+    {
+      "id": "A01",
+      "name": "折旧摊销排程表",
+      "module": "A",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认政策编制固定资产折旧与无形资产摊销，保护已确认历史，复核净值、变更与来源底稿",
+      "detailRoute": "tool-asset-02",
+      "workspaceRoute": "work-A01"
+    },
+    {
+      "id": "A02",
+      "name": "资产台账与盘点",
+      "module": "A",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按盘点批次核对资产台账、实盘及明确ID对应，复核差异、重盘选择和完整来源，封存本地批次历史",
+      "detailRoute": "tool-asset-03",
+      "workspaceRoute": "work-A02"
+    },
+    {
+      "id": "A03",
+      "name": "资产处置测算",
+      "module": "A",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对资产账面、截止折摊和处置对价税费，测算部分处置损益，逐项复核分录及完整来源底稿",
+      "detailRoute": "tool-A03",
+      "workspaceRoute": "work-A03"
+    },
+    {
+      "id": "A04",
+      "name": "租赁测算底稿",
+      "module": "A",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "明确承租人固定付款和折现依据，逐笔测算付款现值、租赁负债与未来变更，保留已确认历史和来源底稿",
+      "detailRoute": "tool-A04",
+      "workspaceRoute": "work-A04"
+    },
+    {
+      "id": "C01",
+      "name": "月结工作台",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按期间安排月结任务和依赖，登记证据与未结事项，复核执行进度并下载封板归档",
+      "detailRoute": "tool-C01",
+      "workspaceRoute": "work-C01"
+    },
+    {
+      "id": "C02",
+      "name": "计提与冲回",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按费用依据和生效规则编制计提与冲回，逐期核对余额、借贷分录、变更和确认历史",
+      "detailRoute": "tool-close-04",
+      "workspaceRoute": "work-C02"
+    },
+    {
+      "id": "C03",
+      "name": "待摊费用排程",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按受益期间编制待摊费用排程，保护确认历史，复核未来变更、实际已摊与剩余余额",
+      "detailRoute": "tool-C03",
+      "workspaceRoute": "work-C03"
+    },
+    {
+      "id": "C04",
+      "name": "科目余额核查",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对科目余额、方向、期初发生与期末，追查辅助账及差异，保留来源和复核底稿",
+      "detailRoute": "tool-C04",
+      "workspaceRoute": "work-C04"
+    },
+    {
+      "id": "C05",
+      "name": "凭证编制与核对",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已批准模板编制凭证底稿，核对借贷、科目和原始业务，逐组复核并导出完整分录",
+      "detailRoute": "tool-close-05",
+      "workspaceRoute": "work-C05"
+    },
+    {
+      "id": "C06",
+      "name": "总账明细账对账",
+      "module": "C",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按组织、科目与期间核对总账和明细账，分列余额与发生额差异，逐组追查全部组成和来源底稿",
+      "detailRoute": "tool-C06",
+      "workspaceRoute": "work-C06"
+    },
+    {
+      "id": "F01",
+      "name": "资产负债表与利润表",
+      "module": "F",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认科目与明细映射编制资产负债表和利润表，完整核对期间、方向、调整与来源",
+      "detailRoute": "tool-close-08",
+      "workspaceRoute": "work-F01"
+    },
+    {
+      "id": "F02",
+      "name": "现金流量表编制",
+      "module": "F",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按实际收支编制直接法辅助底稿，逐月逐账户核对余额、划转和分类依据",
+      "detailRoute": "tool-fund-06",
+      "workspaceRoute": "work-F02"
+    },
+    {
+      "id": "F03",
+      "name": "财务报表勾稽",
+      "module": "F",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐项核对报表关系与差额，按主体期间分别复核，并追到原始金额单元格",
+      "detailRoute": "tool-close-09",
+      "workspaceRoute": "work-F03"
+    },
+    {
+      "id": "F04",
+      "name": "集团往来与合并抵销",
+      "module": "F",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对集团内部往来差额，经人工复核与模板批准形成简单债权债务抵销底稿",
+      "detailRoute": "tool-close-07",
+      "workspaceRoute": "work-F04"
+    },
+    {
+      "id": "F05",
+      "name": "财报分析看板",
+      "module": "F",
+      "kind": "分析看板",
+      "status": "已上线",
+      "ai": false,
+      "description": "明确经营口径与期间，核对三张财务报表，追查同比变化、结构指标、例外和来源底稿",
+      "detailRoute": "tool-F05",
+      "workspaceRoute": "work-F05"
+    },
+    {
+      "id": "X01",
+      "name": "票账核对",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐票核对发票与账务的含税、不含税及税额，分别复核价税、红字、作废、重复和完整原始来源",
+      "detailRoute": "tool-X01",
+      "workspaceRoute": "work-X01"
+    },
+    {
+      "id": "X02",
+      "name": "税会差异底稿",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐项记录税会差异性质和依据，核对期初新增转回与期末，追查未排余额和完整来源底稿",
+      "detailRoute": "tool-X02",
+      "workspaceRoute": "work-X02"
+    },
+    {
+      "id": "X03",
+      "name": "纳税调整测算",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按用户确认的年度规则测算纳税调整，核对共用限额、利润桥及例外，保留公式和来源底稿",
+      "detailRoute": "tool-X03",
+      "workspaceRoute": "work-X03"
+    },
+    {
+      "id": "X04",
+      "name": "申报数据核对",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核对申报表内、表间及申报与账表关系，逐项复核版本、差异与未覆盖事项，追查完整底稿",
+      "detailRoute": "tool-X04",
+      "workspaceRoute": "work-X04"
+    },
+    {
+      "id": "B01",
+      "name": "业务驱动预算",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按收入、费用、人力与资本支出驱动编制预算，分别维护情景和人工调整，核对来源与完整预算底稿",
+      "detailRoute": "tool-B01",
+      "workspaceRoute": "work-B01"
+    },
+    {
+      "id": "B02",
+      "name": "预算实际差异分析",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按预算版本与实际批次核对组织科目差异，逐项复核重要变化，保留原始来源和金额勾稽",
+      "detailRoute": "tool-bud-06",
+      "workspaceRoute": "work-B02"
+    },
+    {
+      "id": "B03",
+      "name": "滚动预测工作台",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "锁定已实现实际，更新未来预测与假设，比较冻结版本，核对全年展望和完整来源底稿",
+      "detailRoute": "tool-bud-04",
+      "workspaceRoute": "work-B03"
+    },
+    {
+      "id": "B04",
+      "name": "编制与人工预算",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按岗位编制、到离职与薪酬假设编制人数和人工预算，分别复核实岗、招聘计划与月度成本",
+      "detailRoute": "tool-B04",
+      "workspaceRoute": "work-B04"
+    },
+    {
+      "id": "B05",
+      "name": "预算版本与假设对比",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "比较两版预算的新增、删除、金额与假设变化，分列口径变更和异常，追查金额桥接与完整来源",
+      "detailRoute": "tool-B05",
+      "workspaceRoute": "work-B05"
+    },
+    {
+      "id": "M01",
+      "name": "客户产品项目盈利分析",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按客户、产品与项目核对收入、直接成本与费用分摊，复核尾差、缺失成本和完整来源底稿",
+      "detailRoute": "tool-ana-05",
+      "workspaceRoute": "work-M01"
+    },
+    {
+      "id": "M02",
+      "name": "量价结构差异分析",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "按已确认两期口径拆解收入与毛利的量、价、结构和单位成本，核对新增退出与差额来源",
+      "detailRoute": "tool-ana-04",
+      "workspaceRoute": "work-M02"
+    },
+    {
+      "id": "M03",
+      "name": "盈亏平衡与定价测算",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐方案确认成本、售价和销量假设，测算保本、目标利润、折扣与敏感性并追查完整底稿",
+      "detailRoute": "tool-M03",
+      "workspaceRoute": "work-M03"
+    },
+    {
+      "id": "M04",
+      "name": "投资回报测算",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "明确现金流、折现率与时点，复核净现值、IRR风险、回收过程、情景和完整来源底稿",
+      "detailRoute": "tool-bud-07",
+      "workspaceRoute": "work-M04"
+    },
+    {
+      "id": "M05",
+      "name": "经营月报",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "用核对后的经营指标生成可追溯月报，复核预算同期比较、完整图表与事实，原因由人工补充",
+      "detailRoute": "tool-ana-02",
+      "workspaceRoute": "work-M05"
+    },
+    {
+      "id": "D01",
+      "name": "财务台账合并拆分",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "多份财务台账按字段清理后合并或分拆，保留每一行来源，并单列异常、重复和空行",
+      "detailRoute": "tool-D01",
+      "workspaceRoute": "work-D01"
+    },
+    {
+      "id": "D02",
+      "name": "账表对账",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "会计明细与业务台账按单据和口径核对，逐项追查差异并留存复核底稿",
+      "detailRoute": "tool-D02",
+      "workspaceRoute": "work-D02"
+    },
+    {
+      "id": "D03",
+      "name": "科目与客商对应关系",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "分别核对科目、客商和部门的对应关系，处理冲突并追查原始资料",
+      "detailRoute": "tool-D03",
+      "workspaceRoute": "work-D03"
+    },
+    {
+      "id": "D04",
+      "name": "PDF财务表格整理",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "整理财务PDF中的指定表格，逐行复核原文与金额，导出保留页码、坐标和校正依据的底稿",
+      "detailRoute": "tool-D04",
+      "workspaceRoute": "work-D04"
+    },
+    {
+      "id": "D05",
+      "name": "财务表格公式检查",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "复核财务工作簿的公式、引用与模式差异，逐格追查原值和缓存，导出完整检查底稿",
+      "detailRoute": "tool-D05",
+      "workspaceRoute": "work-D05"
+    },
+    {
+      "id": "D06",
+      "name": "财务明细核查",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "核查本期财务明细的缺失、重复与金额勾稽，逐项追查异常并留存复核底稿",
+      "detailRoute": "tool-D06",
+      "workspaceRoute": "work-D06"
+    },
+    {
+      "id": "U01",
+      "name": "凭证异常检查",
+      "module": "U",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "复核凭证范围、借贷勾稽与八类异常线索，保留未执行检查、人工复核及全部原始来源",
+      "detailRoute": "tool-close-12",
+      "workspaceRoute": "work-U01"
+    },
+    {
+      "id": "U02",
+      "name": "审计抽样",
+      "module": "U",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "确认总体与剔除依据，按确定种子随机、分层或指定抽样，完整保留样本、来源和复现底稿",
+      "detailRoute": "tool-U02",
+      "workspaceRoute": "work-U02"
+    },
+    {
+      "id": "U03",
+      "name": "询证函编制",
+      "module": "U",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "逐项核对往来余额与函证对象，确认抬头和金额，在本机编制询证函及函证控制清单",
+      "detailRoute": "tool-U03",
+      "workspaceRoute": "work-U03"
+    },
+    {
+      "id": "U04",
+      "name": "内控检查底稿",
+      "module": "U",
+      "kind": "单点工具",
+      "status": "已上线",
+      "ai": false,
+      "description": "记录批准的内控检查步骤、证据索引、问题与整改复核，保留原始证据哈希和完整检查底稿",
+      "detailRoute": "tool-U04",
+      "workspaceRoute": "work-U04"
+    },
+    {
+      "id": "R-P01",
+      "name": "应收管理台",
+      "module": "R",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "客户额度、开票、回款、对账集中管理，例外按重要性排队处理",
+      "legacyRoute": "tool-ar-01"
+    },
+    {
+      "id": "R-P02",
+      "name": "应收分析看板",
+      "module": "R",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "账龄、周转、逾期与回款预测，一屏看清应收健康度",
+      "legacyRoute": "tool-ar-02"
+    },
+    {
+      "id": "R-P03",
+      "name": "开票登记",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "开票信息登记与台账，开票与合同自动关联",
+      "legacyRoute": "tool-ar-04"
+    },
+    {
+      "id": "R-P04",
+      "name": "应收逾期跟踪表",
+      "module": "R",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "逾期客户自动分级，生成催收提醒清单",
+      "legacyRoute": "tool-ar-07"
+    },
+    {
+      "id": "P-P01",
+      "name": "应付管理台",
+      "module": "P",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "采购、应付、付款全流程集中管理",
+      "legacyRoute": "tool-ap-01"
+    },
+    {
+      "id": "P-P02",
+      "name": "应付分析看板",
+      "module": "P",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "账期结构、付款节奏与供应商集中度分析",
+      "legacyRoute": "tool-ap-02"
+    },
+    {
+      "id": "P-P03",
+      "name": "采购合同台账",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "采购合同信息统一登记，关键条款可查",
+      "legacyRoute": "tool-ap-03"
+    },
+    {
+      "id": "P-P04",
+      "name": "应付账龄表",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "应付款项按账龄自动分档",
+      "legacyRoute": "tool-ap-04"
+    },
+    {
+      "id": "P-P05",
+      "name": "合同到期提醒",
+      "module": "P",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "合同到期、续约节点提前自动提醒",
+      "legacyRoute": "tool-ap-07"
+    },
+    {
+      "id": "E-P01",
+      "name": "费用报销管理台",
+      "module": "E",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "报销录入、审核、台账在一处完成",
+      "legacyRoute": "tool-exp-01"
+    },
+    {
+      "id": "E-P02",
+      "name": "发票信息提取",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "发票要素自动识别、写入本地台账",
+      "legacyRoute": "tool-exp-03"
+    },
+    {
+      "id": "E-P03",
+      "name": "费用预算管控表",
+      "module": "E",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "各部门费用预算与实际对比，超支预警",
+      "legacyRoute": "tool-exp-05"
+    },
+    {
+      "id": "T-P01",
+      "name": "资金管理平台",
+      "module": "T",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "账户、流水、资金调度与余额集中管理",
+      "legacyRoute": "tool-fund-01"
+    },
+    {
+      "id": "T-P02",
+      "name": "资金分析看板",
+      "module": "T",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "现金流结构、资金效率与账户分布",
+      "legacyRoute": "tool-fund-02"
+    },
+    {
+      "id": "T-P03",
+      "name": "银行流水导入归集",
+      "module": "T",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "多家银行流水一键标准化、按规则归集",
+      "legacyRoute": "tool-fund-03"
+    },
+    {
+      "id": "K-P01",
+      "name": "成本核算台",
+      "module": "K",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "成本归集、分摊、核算全流程管理",
+      "legacyRoute": "tool-cost-01"
+    },
+    {
+      "id": "K-P02",
+      "name": "成本分析看板",
+      "module": "K",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "成本结构与变动原因分析",
+      "legacyRoute": "tool-cost-02"
+    },
+    {
+      "id": "K-P03",
+      "name": "产品损益测算表",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "单产品、单业务线损益测算",
+      "legacyRoute": "tool-cost-04"
+    },
+    {
+      "id": "K-P04",
+      "name": "定价测算表",
+      "module": "K",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "不同定价下的毛利与销量敏感性测算",
+      "legacyRoute": "tool-cost-06"
+    },
+    {
+      "id": "A-P01",
+      "name": "固定资产台账",
+      "module": "A",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "资产卡片、折旧、盘点集中管理",
+      "legacyRoute": "tool-asset-01"
+    },
+    {
+      "id": "C-P01",
+      "name": "月报数据填报台",
+      "module": "C",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "各口径线下数据在线填报、结构化落库",
+      "legacyRoute": "tool-close-02"
+    },
+    {
+      "id": "C-P02",
+      "name": "关账进度看板",
+      "module": "C",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "各岗位结账进度与卡点一屏可见",
+      "legacyRoute": "tool-close-03"
+    },
+    {
+      "id": "F-P01",
+      "name": "对外报送数据核对",
+      "module": "F",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "对外报表报送前的数字与口径交叉核对",
+      "legacyRoute": "tool-close-11"
+    },
+    {
+      "id": "X-P01",
+      "name": "税务管理台",
+      "module": "X",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "申报、发票、税务台账集中管理",
+      "legacyRoute": "tool-tax-01"
+    },
+    {
+      "id": "X-P02",
+      "name": "税负分析看板",
+      "module": "X",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "税负率与税种结构分析",
+      "legacyRoute": "tool-tax-02"
+    },
+    {
+      "id": "X-P03",
+      "name": "税额测算表",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "增值税、所得税测算",
+      "legacyRoute": "tool-tax-03"
+    },
+    {
+      "id": "X-P04",
+      "name": "进销项发票匹配",
+      "module": "X",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "进项与销项发票自动匹配",
+      "legacyRoute": "tool-tax-04"
+    },
+    {
+      "id": "B-P01",
+      "name": "预算管理平台",
+      "module": "B",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "预算编制、填报、审批、执行跟踪全流程",
+      "legacyRoute": "tool-bud-01"
+    },
+    {
+      "id": "B-P02",
+      "name": "预算分析看板",
+      "module": "B",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "预实差异与执行进度",
+      "legacyRoute": "tool-bud-02"
+    },
+    {
+      "id": "B-P03",
+      "name": "预算填报器",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "各部门在同一模板填报，自动校验汇总",
+      "legacyRoute": "tool-bud-03"
+    },
+    {
+      "id": "B-P04",
+      "name": "情景测算表",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "调整关键假设即可看全年结果",
+      "legacyRoute": "tool-bud-05"
+    },
+    {
+      "id": "B-P05",
+      "name": "预算执行预警",
+      "module": "B",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "超支苗头提前预警",
+      "legacyRoute": "tool-bud-08"
+    },
+    {
+      "id": "M-P01",
+      "name": "经营分析看板",
+      "module": "M",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "经营指标看板，数据导入即可看、可下钻",
+      "legacyRoute": "tool-ana-01"
+    },
+    {
+      "id": "M-P02",
+      "name": "指标监控预警台",
+      "module": "M",
+      "kind": "分析看板",
+      "status": "规划中",
+      "ai": false,
+      "description": "经营指标阈值监控，异常自动标红",
+      "legacyRoute": "tool-ana-03"
+    },
+    {
+      "id": "M-P03",
+      "name": "产品区域贡献分析",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "收入利润按产品、区域拆解",
+      "legacyRoute": "tool-ana-06"
+    },
+    {
+      "id": "M-P04",
+      "name": "KPI 一页纸生成",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "关键指标浓缩成一页，适合管理层阅读",
+      "legacyRoute": "tool-ana-07"
+    },
+    {
+      "id": "M-P05",
+      "name": "经营指标问答",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "用日常语言提问，直接得到指标结果",
+      "legacyRoute": "tool-ana-08"
+    },
+    {
+      "id": "M-P06",
+      "name": "管理层问答清单",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "管理层高频问题预备口径一致的答案",
+      "legacyRoute": "tool-ana-09"
+    },
+    {
+      "id": "M-P07",
+      "name": "管理层月报生成器",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "基于数据生成月度经营报告初稿",
+      "legacyRoute": "tool-ana-10"
+    },
+    {
+      "id": "M-P08",
+      "name": "投资人 Q&A 准备",
+      "module": "M",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "预拟投资人问题与口径一致的答案",
+      "legacyRoute": "tool-ana-11"
+    },
+    {
+      "id": "D-P01",
+      "name": "主数据管理台",
+      "module": "D",
+      "kind": "管理平台",
+      "status": "规划中",
+      "ai": false,
+      "description": "科目、客商等主数据统一维护",
+      "legacyRoute": "tool-meta-01"
+    },
+    {
+      "id": "D-P02",
+      "name": "科目主数据维护",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "科目表维护与变更留痕",
+      "legacyRoute": "tool-meta-02"
+    },
+    {
+      "id": "D-P03",
+      "name": "客商档案维护",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "客户、供应商档案统一维护",
+      "legacyRoute": "tool-meta-03"
+    },
+    {
+      "id": "D-P04",
+      "name": "指标口径手册",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "每个指标怎么算、数从哪来，写在明处",
+      "legacyRoute": "tool-meta-04"
+    },
+    {
+      "id": "D-P05",
+      "name": "指标血缘溯源",
+      "module": "D",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": false,
+      "description": "指标上下游关系可查",
+      "legacyRoute": "tool-meta-05"
+    },
+    {
+      "id": "U-P01",
+      "name": "财务制度知识库问答",
+      "module": "U",
+      "kind": "单点工具",
+      "status": "规划中",
+      "ai": true,
+      "description": "制度、政策一句话查到出处",
+      "legacyRoute": "tool-meta-06"
+    }
+  ]
+}
